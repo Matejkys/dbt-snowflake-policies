@@ -1,0 +1,6 @@
+version: 2
+
+sources:
+  - name: my_source   # Use any name that makes sense for your database
+    tables:
+      - name: recipients
