@@ -1,0 +1,17 @@
+name: my_dbt_project
+version: '1.0'
+config-version: 2
+
+# This should match a profile defined in your profiles.yml file.
+profile: my_dbt_project
+
+# The directories where dbt looks for model files.
+model-paths: ["models"]
+
+# Optional: where to place compiled files and run artifacts.
+target-path: "target"
+
+# Directories that should be removed when running `dbt clean`
+clean-targets:
+  - "target"
+  - "dbt_modules"
